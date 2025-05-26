@@ -76,82 +76,69 @@
       </p>
     </header>
 
-    <section class="section">
-      <h2>Objective</h2>
-      <p>Interested in DevOps or DevSecOps roles</p>
-    </section>
-
-    <section class="section">
-      <h2>Profile</h2>
-      <p>
-        DevOps Engineer with extensive experience designing, deploying, and managing cloud infrastructure using Terraform,
-        automating CI/CD processes, and configuring systems across Linux and Windows environments. Strong background in
-        information security, system monitoring, and Python, Bash, and PowerShell scripting. A proactive and collaborative
-        team player with broad system-level vision and fast learning abilities.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>Technologies & Skills</h2>
-      <ul>
-        <li><strong>Cloud & Infrastructure:</strong> AWS, Azure, GCP, Terraform</li>
-        <li><strong>Containers & Orchestration:</strong> Docker, Kubernetes, Helm</li>
-        <li><strong>CI/CD & Automation:</strong> GitHub Actions, Azure DevOps, ArgoCD, SSDLC</li>
-        <li><strong>Monitoring & Analytics:</strong> Prometheus, Grafana, Dynatrace, Splunk, SolarWinds</li>
-        <li><strong>Security & Protocols:</strong> WAF, SSL/TLS, PKI, QRadar, Qualys</li>
-        <li><strong>Systems & Scripting:</strong> Linux, Windows, Bash, Python, PowerShell</li>
-        <li><strong>Databases:</strong> MySQL, MSSQL</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>Cyber and Information Security at HackerU</strong> (Aug 2020 – Dec 2021) – Score: 93.2</li>
-        <li><strong>B.A M.A – Bar-Ilan University</strong> (2013 – 2016) – Score: 94.5</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>Certifications</h2>
-      <div class="certs">
-        <img src="./aws-certified-cloud-practitioner.png" alt="AWS Cloud Practitioner" />
-        <img src="./aws-certified-security-specialty.png" alt="AWS Security Specialty" />
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Work Experience</h2>
-      <ul>
-        <li><strong>Cloud Monitoring Specialist – Mizrahi Tefahot Bank (via Comblack)</strong> (Oct 2024 – Present)</li>
-        <li><strong>DevOps Engineer – Malam Team</strong> (Jul 2023 – Oct 2024)</li>
-        <li><strong>Support Engineer – Leumi Bank (via Malam Team)</strong> (Jul 2022 – Jun 2023)</li>
-        <li><strong>SecOps – GRSee Consulting</strong> (Jun 2021 – May 2022)</li>
-      </ul>
-    </section>
-
     
 <section class="section">
-  <h2>DevOps Projects Portfolio</h2>
+  <h2>Selected DevOps Projects</h2>
+
+  <h3>Secure Netflix Deployment on Kubernetes</h3>
+  <p>Implemented a complete CI/CD pipeline for a Netflix-like application using Jenkins, Docker, and Kubernetes.
+  Integrated security tools like SonarQube and Trivy for code and container scanning. Deployed using Helm and managed releases with ArgoCD.
+  Monitored the system with Prometheus and Grafana.</p>
   <ul>
-    <li><strong>GitOps with ArgoCD:</strong> Installed local Kubernetes cluster using Docker Desktop, deployed ArgoCD with port-forwarded UI, connected a GitHub repo with manifests via `application.yaml`, enabling real-time sync between Git and Kubernetes.</li>
-    <li><strong>Cloud Monitoring App with Python:</strong> Built a Flask-based monitoring app in Python, containerized it with Docker, uploaded the image to AWS ECR, and deployed it on EKS using Kubernetes manifests written in Python. Exposed via port-forwarding.</li>
-    <li><strong>Observability Stack with OpenTelemetry:</strong> Deployed the Otel demo on Docker/Kubernetes with full metrics/logs/traces. Configured Jaeger, Grafana, and Prometheus as backends, and optionally tested with Datadog, Splunk, Dynatrace, and more.</li>
-    <li><strong>Secure Infra Automation with Terraform:</strong> Created AWS architecture using Terraform (VPC, EC2, DynamoDB, CloudFront), secured DB access with VPN, configured SMS alerts via CloudWatch, and managed secrets via AWS Secrets Manager with cross-account access.</li>
-    <li><strong>Voting App on Kubernetes:</strong> Deployed a full microservices voting app on EKS with React frontend, Go backend, and MongoDB (HA replicaset). Built all components from scratch, tested high availability and Kubernetes service exposure.</li>
-    <li><strong>DevSecOps Netflix Deployment:</strong> Used Jenkins, SonarQube, Trivy, Helm, and ArgoCD to securely deploy a Netflix clone app on Kubernetes. Integrated monitoring with Prometheus/Grafana. Built a secure and automated CI/CD pipeline.</li>
-    <li><strong>CV Hosting via GitHub Pages:</strong> Migrated CV site from AWS S3 to GitHub Pages with custom design, HTTPS, and downloadable resume. Leveraged Git workflows and static hosting best practices.</li>
+    <li><strong>Tools:</strong> Jenkins, Docker, Kubernetes, Helm, ArgoCD, SonarQube, Trivy, Prometheus, Grafana</li>
+    <li><strong>Highlights:</strong> Automated deployments with security checks, real-time monitoring, and rollback capabilities.</li>
+  </ul>
+
+  <h3>VPN Connection to AWS RDS from On-Premises</h3>
+  <p>Established a secure VPN connection from an on-premises environment to AWS RDS using AWS Client VPN.
+  Managed infrastructure as code with Terraform, configured ACM for certificate management, and integrated DNS settings for seamless connectivity.</p>
+  <ul>
+    <li><strong>Tools:</strong> AWS Client VPN, Terraform, AWS ACM, Route 53</li>
+    <li><strong>Highlights:</strong> Secure and scalable database access across environments.</li>
+  </ul>
+
+  <h3>Observability Stack with OpenTelemetry</h3>
+  <p>Built an observability stack using OpenTelemetry to collect metrics, logs, and traces.
+  Deployed Jaeger for distributed tracing, Grafana for visualization, and Prometheus for metrics collection,
+  providing comprehensive insights into application performance.</p>
+  <ul>
+    <li><strong>Tools:</strong> OpenTelemetry, Jaeger, Grafana, Prometheus</li>
+    <li><strong>Highlights:</strong> Enhanced system observability and troubleshooting capabilities.</li>
+  </ul>
+
+  <h3>Personal CV Website Hosting on GitHub Pages</h3>
+  <p>Developed and hosted a personal CV website using GitHub Pages.
+  Implemented version control with Git, automated deployments, and ensured responsive design for various devices.</p>
+  <ul>
+    <li><strong>Tools:</strong> GitHub Pages, Git, HTML, CSS</li>
+    <li><strong>Highlights:</strong> Professional online presence with easy access to resume and projects.</li>
+  </ul>
+
+  <h3>Python Monitoring App in the Cloud</h3>
+  <p>Developed a Flask-based Python monitoring app from scratch and deployed it to the cloud.
+  Containerized the app with Docker, uploaded it to AWS ECR, and deployed to an EKS cluster.
+  Kubernetes manifests were dynamically generated using Python.</p>
+  <ul>
+    <li><strong>Tools:</strong> Python, Flask, Docker, AWS ECR, Kubernetes, EKS</li>
+    <li><strong>Highlights:</strong> End-to-end DevOps pipeline from development to deployment using Python automation.</li>
+  </ul>
+
+  <h3>Voting App on Kubernetes</h3>
+  <p>Deployed a microservices voting app on EKS. Built the frontend with React, backend with Go,
+  and configured MongoDB with a high availability replicaset.
+  Provisioned Kubernetes infrastructure from scratch and tested HA deployments.</p>
+  <ul>
+    <li><strong>Tools:</strong> Kubernetes (EKS), React, Golang, MongoDB</li>
+    <li><strong>Highlights:</strong> Full-stack microservices deployment with high availability database configuration.</li>
+  </ul>
+
+  <h3>GitOps with ArgoCD</h3>
+  <p>Configured a local Kubernetes cluster and installed ArgoCD for GitOps-based app deployment.
+  Synced a GitHub repo via application.yaml to enable automatic syncing of Kubernetes manifests using Git.
+  Demonstrated the full GitOps workflow with Helm and manifests.</p>
+  <ul>
+    <li><strong>Tools:</strong> Kubernetes (Docker Desktop), ArgoCD, GitHub, YAML, Helm</li>
+    <li><strong>Highlights:</strong> Real-time GitOps CI/CD and hands-on practice with ArgoCD application sync.</li>
   </ul>
 </section>
-
-
-    <div class="download">
-      <a href="./Imri%20shorek_CV.docx" download>Download CV (DOCX)</a>
-    </div>
-
-    <footer>
-      <p>© 2025 Imri Shorek</p>
-    </footer>
-  </div>
-</body>
-</html>
+</body></html>
