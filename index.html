@@ -153,94 +153,69 @@
       </ul>
     </section>
 
-    <section class="section">
-      <h2>Selected Projects</h2>
+<section class="section">
+  <h2>Selected Projects</h2>
 
-      <h3>Secure Netflix Deployment on Kubernetes</h3>
-      <p>Implemented a CI/CD pipeline for a Netflix-like app using Jenkins, Docker, and Kubernetes.
-      Integrated Trivy and SonarQube for security, and deployed using ArgoCD and Helm.</p>
-      <ul>
-        <li><strong>Tools:</strong> Jenkins, Docker, Kubernetes, Helm, ArgoCD, SonarQube, Trivy, Prometheus, Grafana</li>
-        <li><strong>Highlights:</strong> End-to-end secured pipeline with monitoring and rollback support.</li>
-      </ul>
+  <article class="project">
+    <h3>Secure Netflix‑Style Deployment on Kubernetes</h3>
+    <p>Built an end‑to‑end CI/CD for a containerized app with gated security checks and safe rollbacks.</p>
+    <ul>
+      <li><strong>Tools:</strong> Jenkins, Docker, Kubernetes, Helm, ArgoCD, Trivy, SonarQube, Prometheus, Grafana</li>
+      <li><strong>Impact:</strong> Faster releases with automated scans and monitored rollbacks → reduced deployment risk.</li>
+    </ul>
+  </article>
 
-      <h3>VPN Connection to AWS RDS from On-Premises</h3>
-      <p>Established secure VPN from on-prem server to AWS RDS using AWS Client VPN and Terraform with DNS and ACM integration.</p>
-      <ul>
-        <li><strong>Tools:</strong> AWS Client VPN, Terraform, Route 53, ACM</li>
-        <li><strong>Highlights:</strong> Scalable and secure infrastructure access.</li>
-      </ul>
+  <article class="project">
+    <h3>VPN Access to AWS RDS from On‑Prem</h3>
+    <p>Provisioned a secure, auditable path from on‑prem servers to RDS using AWS Client VPN and private DNS.</p>
+    <ul>
+      <li><strong>Tools:</strong> Terraform, AWS Client VPN, Route 53, ACM, Security Groups</li>
+      <li><strong>Impact:</strong> Reliable DB access across environments with least‑privilege rules and cert‑based auth.</li>
+    </ul>
+  </article>
 
-      <h3>Observability Stack with OpenTelemetry</h3>
-      <p>Deployed OpenTelemetry stack with Jaeger, Grafana and Prometheus for logs, metrics and traces over Kubernetes and Docker.</p>
-      <ul>
-        <li><strong>Tools:</strong> OTel, Jaeger, Prometheus, Grafana</li>
-        <li><strong>Highlights:</strong> Open observability with multi-backend support.</li>
-      </ul>
+  <article class="project">
+    <h3>Observability Stack with OpenTelemetry</h3>
+    <p>Deployed vendor‑neutral telemetry (metrics/logs/traces) and wired service instrumentation for real insights.</p>
+    <ul>
+      <li><strong>Tools:</strong> OpenTelemetry, Jaeger, Prometheus, Grafana</li>
+      <li><strong>Impact:</strong> Shorter MTTR via unified views and trace‑to‑metrics correlation.</li>
+    </ul>
+  </article>
 
-      <h3>GitHub Pages CV Website</h3>
-      <p>Built and deployed personal CV site using GitHub Pages with static HTML/CSS and versioned resume updates.</p>
-      <ul>
-        <li><strong>Tools:</strong> GitHub Pages, Git, HTML, CSS</li>
-        <li><strong>Highlights:</strong> Modern professional online CV with repo integration.</li>
-      </ul>
+  <article class="project">
+    <h3>Multi‑Environment AWS with Terraform</h3>
+    <p>Automated Dev/Staging/Prod using reusable modules with network, compute and data layers.</p>
+    <ul>
+      <li><strong>Tools:</strong> Terraform, AWS (VPC, EC2, ALB, RDS, ASG, S3), Route 53, WAF, IAM</li>
+      <li><strong>Impact:</strong> Consistent infra, versioned changes, HA by design across AZs.</li>
+    </ul>
+  </article>
 
-      <h3>Python Monitoring App in the Cloud</h3>
-      <p>Created Flask-based monitoring app, containerized with Docker, uploaded to AWS ECR and deployed on EKS using Python-generated manifests.</p>
-      <ul>
-        <li><strong>Tools:</strong> Python, Flask, Docker, AWS ECR, EKS</li>
-        <li><strong>Highlights:</strong> Fully automated app lifecycle with Python and cloud-native stack.</li>
-      </ul>
+  <article class="project">
+    <h3>Amazon WorkSpaces MFA with FreeRADIUS</h3>
+    <p>Enforced strong authentication for remote desktops with directory integration and OTP.</p>
+    <ul>
+      <li><strong>Tools:</strong> Amazon WorkSpaces, Directory Service, FreeRADIUS, OTP, IAM, EC2</li>
+      <li><strong>Impact:</strong> Hardened remote access for users with 2FA; improved compliance posture.</li>
+    </ul>
+  </article>
 
-      <h3>Voting App on Kubernetes</h3>
-      <p>Deployed React + Go voting app with MongoDB replicaset to EKS using best practices for high availability and resiliency.</p>
-      <ul>
-        <li><strong>Tools:</strong> React, Go, MongoDB, Kubernetes, EKS</li>
-        <li><strong>Highlights:</strong> Hands-on microservices orchestration on cloud K8s.</li>
-      </ul>
+  <article class="project">
+    <h3>Secure NGINX Deployment via CI/CD</h3>
+    <p>Hardened pipeline for a Dockerized web service with image scanning and least‑privilege IAM.</p>
+    <ul>
+      <li><strong>Tools:</strong> GitLab CI/CD, Docker, AWS (EC2, ALB, S3, IAM, VPC), Trivy, OWASP Dependency‑Check, Bash</li>
+      <li><strong>Impact:</strong> Build → scan → push → deploy automation; defense‑in‑depth across pipeline & infra.</li>
+    </ul>
+  </article>
 
-      <h3>GitOps with ArgoCD</h3>
-      <p>Configured GitOps pipeline by linking GitHub repo to ArgoCD via `application.yaml`, enabling automatic sync of K8s resources on changes.</p>
-      <ul>
-        <li><strong>Tools:</strong> ArgoCD, GitHub, Docker Desktop, YAML</li>
-        <li><strong>Highlights:</strong> Real-time declarative sync between Git and Kubernetes.</li>
-      </ul>
+  <!-- Optional: link out to a full portfolio list -->
+  <p style="margin-top:14px;">
+    <a href="https://github.com/Imrishorek1" target="_blank" rel="noopener">More projects on GitHub →</a>
+  </p>
+</section>
 
-      <h3>Multi-Environment Deployment with Terraform</h3>
-      <p>Implemented fully automated infrastructure for Development, Staging, and Production environments in AWS. Each environment is provisioned using Terraform modules, ensuring consistency, version control, and reproducibility.</p>
-      <ul>
-        <li><strong>Tools:</strong> Terraform, AWS (EC2, ALB, RDS, Auto Scaling Groups, S3), Route 53, WAF, IAM</li>
-        <li><strong>Highlights:</strong> Created production-grade, multi-tier architecture with separation of concerns and high availability across multiple Availability Zones. Demonstrated full IAC methodology in a real-world production scenario.</li>
-      </ul>
-
-      <h3>Secure Amazon WorkSpaces with MFA via FreeRADIUS + OTP</h3>
-      <p>Deployed an authentication architecture combining AWS Directory Service with secure multi-factor authentication (MFA). Integrated an OTP server using FreeRADIUS to enforce 2FA login for Amazon WorkSpaces, securing employee access with a user/password and one-time code.</p>
-      <ul>
-        <li><strong>Tools:</strong> AWS Directory Service, Amazon WorkSpaces, FreeRADIUS, OTP, EC2, IAM, Security Groups</li>
-        <li><strong>Highlights:</strong> Successfully implemented secure remote desktop access for 3 workstations. Users now authenticate with both credentials and time-based OTP, reducing attack surface and improving compliance.</li>
-      </ul>
-
-      <h3>Secure NGINX Deployment with CI/CD</h3>
-      <p>Implemented an end-to-end secure deployment pipeline for a Dockerized NGINX app on AWS EC2. Leveraged GitLab CI/CD for automation, IAM for least-privilege access, and integrated security scanning to ensure production readiness.</p>
-      <ul>
-        <li><strong>Tools:</strong> AWS (EC2, S3, ALB, IAM, VPC), Docker, GitLab CI/CD, Trivy, OWASP Dependency-Check, Bash</li>
-        <li><strong>Highlights:</strong> Private EC2 hosting behind ALB, secure S3 access via IAM Role, automated pipeline with build → scan → push → deploy, and defense-in-depth across infrastructure and CI/CD layers.</li>
-      </ul>
-
-      <h3>Multi-site Application Deployment with IIS and Kubernetes Ingress</h3>
-      <p>A practical DevOps project demonstrating the deployment and configuration of multiple web applications using IIS and Kubernetes Ingress Controller, simulating a real-world multi-site hosting environment.</p>
-      <ul>
-        <li><strong>Tools:</strong> Kubernetes, Docker, NGINX Ingress Controller, IIS, YAML, kubectl</li>
-        <li><strong>Highlights:</strong> Designed and deployed two isolated namespaces, each hosting its own web application, Configured Nginx Ingress with path-based routing to serve multiple sites via localhost, Integrated IIS hosting alongside containerized services for hybrid demonstration.</li>
-      </ul>
-
-      <h3>Kubernetes Demo App Deployment & CI/CD</h3>
-      <p>IDeployed a Node.js demo application to a Kubernetes cluster with Ingress routing and custom DNS, followed by implementing a CI/CD pipeline for automated build, test, and deployment.</p>
-      <ul>
-        <li><strong>Tools:</strong> Kubernetes, Docker, Ingress NGINX, Node.js, GitHub, GitHub Actions, EC2, Linux</li>
-        <li><strong>Highlights:</strong> Provisioned a Kubernetes cluster and configured Ingress with custom host mapping (demo.local), Packaged and containerized a Node.js application for deployment, Configured DNS via host file to enable external access, Implemented a CI/CD pipeline to automate application updates from GitHub to Kubernetes, Ensured application availability and security best practices in deployment.</li>
-      </ul>
-    </section>
 
     <div class="download">
       <a href="./Imrishorek_ITCV.docx" download>Download CV (DOCX)</a>
